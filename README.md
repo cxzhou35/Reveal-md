@@ -1,2 +1,3 @@
 # Reveal-md
-This repo stores the reveal-md resources.
+
+This repo stores my reveal-md resources.
