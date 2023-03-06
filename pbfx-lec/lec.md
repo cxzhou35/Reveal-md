@@ -49,15 +49,15 @@ Note: Test note.
 
 <!--v-->
 
-|    Date     |                 Content                 | Tutor |
-| :---------: | :-------------------------------------: | :---: |
-|    10.15    |              Git / Github               | Zicx  |
-|    10.29    |                Markdown                 | Zicx  |
-|    11.12    |                   Vim                   | Zicx  |
-|    11.26    |            Terminal / Shell             | Zicx  |
-|    12.10    |                  LaTeX                  | Zicx  |
-|    12.24    |            GNU Make / Cmake             | Zicx  |
-| 12.31 (TBD) | Apps & Tools recommendation && chatting | Zicx  |
+|     Date    |                 Content                 | Tutor |
+|:-----------:|:---------------------------------------:|:-----:|
+|    10.15    |               Git / Github              |  Zicx |
+|    10.29    |                 Markdown                |  Zicx |
+|    11.12    |                   Vim                   |  Zicx |
+|    11.26    |             Terminal / Shell            |  Zicx |
+|    12.10    |                  LaTeX                  |  Zicx |
+|    12.24    |             GNU Make / Cmake            |  Zicx |
+| 12.31 (TBD) | Apps & Tools recommendation && chatting |  Zicx |
 
 <!--v-->
 
