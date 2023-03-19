@@ -93,9 +93,9 @@ By [@TonyCrane](https://github.com/TonyCrane)
 - Linux 下：Gnome Terminal、Konsole、iTerm2 等
 - macOS 下：原生 Terminal、iTerm2（推荐）等
 - 跨平台：
-    - Warp: <https://warp.dev/>，基于 Rust
-    - Hyper: <https://hyper.is/>，基于 Electron
-    - ...
+  - Warp: <https://warp.dev/>，基于 Rust
+  - Hyper: <https://hyper.is/>，基于 Electron
+  - ...
 
 </div>
 
@@ -105,23 +105,23 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - “壳层”，是用户与系统内核交互的界面
 - 也是一个程序，负责接收命令，处理要做的工作然后交给内核来执行，并处理返回输出
-    - 如何让内核执行工作？系统调用
+  - 如何让内核执行工作？系统调用
 
 <div class="fragment">
 
 都有什么常用的 Shell 呢？
 
-</div>  
+</div>
 
 <div class="fragment">
 
 - Windows 下：cmd.exe、PowerShell（图形化 Shell）
 - *nix 下：
-    - **sh**：Bourne Shell，最早、最经典的 shell
-    - **bash**：Bourne Again Shell，最常用的 shell，绝大部分 Linux 发行版的默认 shell
-    - **zsh**：Z Shell，功能强大、可高度自定义的 shell（个人推荐）
-        - 自 macOS Catalina 开始的默认 shell
-    - **fish**：Friendly Interactive Shell，易用、全平台的 shell
+  - **sh**：Bourne Shell，最早、最经典的 shell
+  - **bash**：Bourne Again Shell，最常用的 shell，绝大部分 Linux 发行版的默认 shell
+  - **zsh**：Z Shell，功能强大、可高度自定义的 shell（个人推荐）
+    - 自 macOS Catalina 开始的默认 shell
+  - **fish**：Friendly Interactive Shell，易用、全平台的 shell
 
 </div>
 
@@ -136,10 +136,10 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - macOS 下 Terminal 可以随意更换 Shell
 - Ctrl-C 到底是复制还是中断程序？
-    - 和 Shell 无关，是 Terminal 的行为
-    - 比如 macOS 上 iTerm 就可以随意更改按键的这些行为
-    - 如果定义了 ^C 应该复制，那么 Terminal 就会直接复制内容到剪贴板
-    - 如果定义了 ^C 应该中断程序，那么 Terminal 就告诉 Shell，Shell 再通过 SIGINT 信号通知内核中断程序
+  - 和 Shell 无关，是 Terminal 的行为
+  - 比如 macOS 上 iTerm 就可以随意更改按键的这些行为
+  - 如果定义了 ^C 应该复制，那么 Terminal 就会直接复制内容到剪贴板
+  - 如果定义了 ^C 应该中断程序，那么 Terminal 就告诉 Shell，Shell 再通过 SIGINT 信号通知内核中断程序
 
 <!--v-->
 
@@ -152,7 +152,7 @@ By [@TonyCrane](https://github.com/TonyCrane)
 一个夸张的例子：你甚至可以在命令行中查看网页！[fathyb/carbonyl](https://github.com/fathyb/carbonyl)
 
 <div style="text-align: center;">
-<img src="img1.png" width="65%" style="margin: 0 auto;">
+<img src="lec1/img1.png" width="65%" style="margin: 0 auto;">
 </div>
 
 <!--v-->
@@ -162,11 +162,11 @@ By [@TonyCrane](https://github.com/TonyCrane)
 - oh-my-zsh：<https://ohmyz.sh/>，一个 zsh 的配置框架，支持主题、插件等配置
 - powerlevel10k（p10k）：一个 oh-my-zsh 的主题，配置简单，好看
 - 插件：
-    - git：oh-my-zsh 自带插件，提供 git 相关的提示
-    - zsh-autosuggestions：自动提示输入过的历史命令
-    - zsh-syntax-highlighting：命令语法高亮
-    - autojump：快速跳转到曾经跳转过的目录
-    - ...
+  - git：oh-my-zsh 自带插件，提供 git 相关的提示
+  - zsh-autosuggestions：自动提示输入过的历史命令
+  - zsh-syntax-highlighting：命令语法高亮
+  - autojump：快速跳转到曾经跳转过的目录
+  - ...
 
 具体安装方法等请见：<https://note.tonycrane.cc/cs/tools/shell/>
 
@@ -188,10 +188,10 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - Prompt 即命令提示符，用来等待输入并给你提供一些信息
 - 其中最重要的信息就是**当前路径**，也称工作路径，是当前 Shell 所处的“位置”
-    - 一定要时时刻刻知道自己“在哪里”
-    - 因为基本所有命令的行为都和当前路径有关
+  - 一定要时时刻刻知道自己“在哪里”
+  - 因为基本所有命令的行为都和当前路径有关
 - 通常还要有的信息是当前正在操作的**用户**
-    - 和权限有关，比如普通用户还是 root 等
+  - 和权限有关，比如普通用户还是 root 等
 
 <br/>
 
@@ -199,7 +199,7 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - 向其中输入命令然后回车，就可以执行命令
 - 输入 pwd，这个命令用来获取当前路径
-    - 可见 ~ 代表的就是当前用户的 “home” 目录
+  - 可见 ~ 代表的就是当前用户的 “home” 目录
 - *nix 下的路径分隔符是 /，Windows 下是 \
 - 而且 Windows 下有多个“根目录”，即不同“盘符”，比如 C:\、D:\ 等
 
@@ -211,23 +211,23 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - pwd：获取当前路径
 - cd *path*：切换路径
-    - *path* 可以是“相对路径”或者“绝对路径”
-    - *path* 中 ~ 代表 home，. 代表当前路径，.. 代表上一级路径
+  - *path* 可以是“相对路径”或者“绝对路径”
+  - *path* 中 ~ 代表 home，. 代表当前路径，.. 代表上一级路径
 
 <!--v-->
 
 ## 文件/目录操作命令
 
 - ls：列出当前路径下的文件和目录
-    - -a：列出所有文件和目录，包括隐藏文件
-    - -l：列出详细信息
+  - -a：列出所有文件和目录，包括隐藏文件
+  - -l：列出详细信息
 - touch *file*：创建一个文件
 - mkdir *dir*：创建一个目录
 - rm *file*：删除一个文件
-    - -r：递归删除目录；-f：强制删除
+  - -r：递归删除目录；-f：强制删除
 - rmdir *dir*：删除一个空目录（rm -r *dir* 删除目录及其下全部内容）
 - cp *src* *dst*：复制文件或目录
-    - -r：递归复制目录
+  - -r：递归复制目录
 - mv *src* *dst*：移动文件或目录（重命名）
 - find *path* -name *pattern*：在 *path* 下查找文件名匹配 *pattern* 的文件
 
@@ -236,12 +236,12 @@ By [@TonyCrane](https://github.com/TonyCrane)
 ## 文件内容查看命令
 
 - cat *file*：输出文件内容
-    - -n：输出行号
+  - -n：输出行号
 - head -n *lines* *file*：输出文件前 *lines* 行
 - tail -n *lines* *file*：输出文件后 *lines* 行
 - more/less *file*：分页输出文件内容
-    - 空格翻页，回车下一行，q 退出
-    - less 的功能更多，比如查找，更好的翻页等，用法见 less --help
+  - 空格翻页，回车下一行，q 退出
+  - less 的功能更多，比如查找，更好的翻页等，用法见 less --help
 
 <!--v-->
 
@@ -291,9 +291,11 @@ By [@TonyCrane](https://github.com/TonyCrane)
 - 通过管道（pipe）可以将一个命令的输出作为另一个命令的输入
 - 使用 | 操作符，将左侧 stdout 重定向到右侧 stdin
 - 通过管道可以将多个命令连接起来，形成一个命令序列，可以通过一行命令来完成相对复杂的操作（e.g. [SadServers](https://sadservers.com/) Saskatoon）
+
     ```bash
-    $ cat /home/admin/access.log | cut -d ' ' -f 1 | sort | uniq -c | sort | tail -n 1
+    cat /home/admin/access.log | cut -d ' ' -f 1 | sort | uniq -c | sort | tail -n 1
     ```
+
 - 复杂命令看不懂？推荐：[explainshell](https://explainshell.com/)
 
 常用搭配：
@@ -311,31 +313,31 @@ By [@TonyCrane](https://github.com/TonyCrane)
 - 一些记录了系统信息的变量，方便程序来使用
 - 通过 echo $*var* 来查看某一环境变量的值，env 命令查看所有环境变量
 - 一个关于环境变量和 shell 命令执行的例子
-    - 🤔 命令是什么（例如 ls）？
-    - -> 是一个程序（/bin/ls），执行命令就是执行程序
-    - 🤔 为什么 shell 可以只通过 ls 就找到 /bin/ls 这个可执行文件？
-    - -> 在 PATH 环境变量中查找
-    - 🤔 为什么一定要用 ./a.out 而不是 a.out 来执行程序？
-    - -> 因为 .（即当前目录）并不在 PATH 变量中
+  - 🤔 命令是什么（例如 ls）？
+  - -> 是一个程序（/bin/ls），执行命令就是执行程序
+  - 🤔 为什么 shell 可以只通过 ls 就找到 /bin/ls 这个可执行文件？
+  - -> 在 PATH 环境变量中查找
+  - 🤔 为什么一定要用 ./a.out 而不是 a.out 来执行程序？
+  - -> 因为 .（即当前目录）并不在 PATH 变量中
 - 设置环境变量
-    - export *var*=*value*：设置环境变量
-        - 仅在当前执行的 shell 中有效，如何持久化 -> 写入配置文件
-    - unset *var*：删除环境变量，或通过 export 将值设为空
+  - export *var*=*value*：设置环境变量
+    - 仅在当前执行的 shell 中有效，如何持久化 -> 写入配置文件
+  - unset *var*：删除环境变量，或通过 export 将值设为空
 
 <!--v-->
 
 ## *配置文件
 
 - 本质上是在加载 shell 时执行的一些脚本文件
-    - 比如 Linux 上 bash 在启动时会依此加载并执行以下文件（有省略）：
-        - /etc/environment -> /etc/profile -> ~/.profile -> ~/.bashrc
-    - 所以只要将 export 语句写入上述中的一个（一般是 ~/.bashrc）就可以自动对所有 shell 设置环境变量
+  - 比如 Linux 上 bash 在启动时会依此加载并执行以下文件（有省略）：
+    - /etc/environment -> /etc/profile -> ~/.profile -> ~/.bashrc
+  - 所以只要将 export 语句写入上述中的一个（一般是 ~/.bashrc）就可以自动对所有 shell 设置环境变量
 - 设置了 shell 的配置文件后，重开新 shell 才会有效果
-    - 不想重开？可以使用 source *file* 来立刻加载某一配置文件
-        - 其实就相当于直接运行了一下这个文件中的脚本
+  - 不想重开？可以使用 source *file* 来立刻加载某一配置文件
+    - 其实就相当于直接运行了一下这个文件中的脚本
 - 除了 shell 的配置文件外，其他程序的配置文件也经常存放在 home 下
-    - 且通常以 . 开头（隐藏），以 rc 结尾（run command）
-    - 比如后面会说到的 ~/.vimrc
+  - 且通常以 . 开头（隐藏），以 rc 结尾（run command）
+  - 比如后面会说到的 ~/.vimrc
 
 <!--s-->
 
@@ -352,16 +354,16 @@ By [@TonyCrane](https://github.com/TonyCrane)
 ## 什么是 vim？
 
 - vi 和 vim？
-    - vi: 大部分 *nix 系统自带的老牌文本编辑器
-    - vim: vi improved，vi 的升级版，功能更强大
+  - vi: 大部分 *nix 系统自带的老牌文本编辑器
+  - vim: vi improved，vi 的升级版，功能更强大
 - 基于命令行的文本/代码编辑器
 - 如何在你的电脑上使用 vim
-    - Linux/macOS：直接通过包管理器（apt/yum/brew 等）安装
-    - Windows：
-        - 使用 WSL，里面安装 vim
-        - 使用 [Gvim](https://www.vim.org/download.php) 或 [neovim](https://neovim.io/)
-    - VSCode 的 [vim 插件](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)也是一个选择
-    - neovim：全平台的 vim 升级版，可配合 [LunarVim](https://www.lunarvim.org/) 开箱即用
+  - Linux/macOS：直接通过包管理器（apt/yum/brew 等）安装
+  - Windows：
+    - 使用 WSL，里面安装 vim
+    - 使用 [Gvim](https://www.vim.org/download.php) 或 [neovim](https://neovim.io/)
+  - VSCode 的 [vim 插件](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)也是一个选择
+  - neovim：全平台的 vim 升级版，可配合 [LunarVim](https://www.lunarvim.org/) 开箱即用
 
 <!--v-->
 
@@ -369,15 +371,14 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - vim 中有多种模式，可以让你只通过键盘就完成各种操作
 - 常用模式：
-    - Normal 模式：默认模式，用于移动光标、处理文本、执行命令等
-    - Insert 模式：用于输入文本
-    - Command 模式：用于执行命令
-    - *Visual 模式：用于选择文本
+  - Normal 模式：默认模式，用于移动光标、处理文本、执行命令等
+  - Insert 模式：用于输入文本
+  - Command 模式：用于执行命令
+  - *Visual 模式：用于选择文本
 
 <div style="text-align: center; margin-top: 0.5em;">
 <img src="lec1/modes.png" width="70%" style="margin: 0 auto;">
 </div>
-
 
 <!--v-->
 
@@ -415,6 +416,7 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - 通过 ~/.vimrc 文件来进行配置
 - 我个人的几条简单配置：
+
     ```text
     syntax on
     set expandtab
@@ -437,17 +439,16 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - 🏆 vim 自带教程：vimtutor（直接输入命令）
 - [Vim Adventures](https://vim-adventures.com/)：一个游戏，通过游戏的方式学习 vim
-    - PS: 这个是 copilot 非要给我加的（x
+  - PS: 这个是 copilot 非要给我加的（x
 - Cheat Sheets:
-    - [vimcheatsheet.com](https://vimcheatsheet.com/)
-    - [ViEmu](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
-    - [vim.rtorr.com](https://vim.rtorr.com/lang/zh_cn) 在线文字版
+  - [vimcheatsheet.com](https://vimcheatsheet.com/)
+  - [ViEmu](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
+  - [vim.rtorr.com](https://vim.rtorr.com/lang/zh_cn) 在线文字版
 - Vim 从入门到精通：[wsdjeg/vim-galore-zh_cn](https://github.com/wsdjeg/vim-galore-zh_cn)
 
 <br/>
 
 ❗️4.8（第六周）周六下午 15:00~16:30 zcxgg 会用单独一次课专门讲解 vim
-
 
 <!--s-->
 
@@ -465,11 +466,11 @@ By [@TonyCrane](https://github.com/TonyCrane)
 
 - 一个词来说就是：**自动化**
 - 只需要写一个 Makefile，就可以通过一句命令来自动化地完成编译、测试、打包、部署等一系列操作
-    - 即使是 Linux 内核，也可以通过一句 make 来完成编译
+  - 即使是 Linux 内核，也可以通过一句 make 来完成编译
 - 而且它不仅仅是用来编译 C/C++ 的，还可以用来执行任何命令
-    - 比如说在编写本课程 slide 的时候，就是用 make 来简化输入命令的
-    - 有些时候会比 shell 脚本更容易编写
-        - 处理依赖、读取命令行输入等 make 都会帮你完成
+  - 比如说在编写本课程 slide 的时候，就是用 make 来简化输入命令的
+  - 有些时候会比 shell 脚本更容易编写
+    - 处理依赖、读取命令行输入等 make 都会帮你完成
 
 <!--v-->
 
@@ -483,46 +484,48 @@ target ...: prerequisites ...
 ```
 
 - target: 目标文件/可执行文件/标签
-    - .PHONY 定义伪目标
+  - .PHONY 定义伪目标
+
         ```makefile
         .PHONY: clean
         ```
+
 - prerequisites: 依赖文件/依赖 target
 - command: 执行的命令
-    - 即触发 target 时执行的 shell 命令
-    - 开头加 `@` 不会在终端输出命令本身
-    - 开头加 `-` 会忽略命令执行失败的错误，继续向下执行
+  - 即触发 target 时执行的 shell 命令
+  - 开头加 `@` 不会在终端输出命令本身
+  - 开头加 `-` 会忽略命令执行失败的错误，继续向下执行
 
 <!--v-->
 
 ## 简介：Makefile 变量
 
 - 变量定义：
-    - VAR = value，value 会在使用时才被展开（可以在文件任何位置）
-    - VAR := value，右边的 value 会在定义时就被展开
-    - VAR ?= value，如果 VAR 未定义，则定义为 value
-    - VAR += value，将 value 追加到 VAR 的末尾
+  - VAR = value，value 会在使用时才被展开（可以在文件任何位置）
+  - VAR := value，右边的 value 会在定义时就被展开
+  - VAR ?= value，如果 VAR 未定义，则定义为 value
+  - VAR += value，将 value 追加到 VAR 的末尾
 - 变量引用：
-    - $(VAR)：引用变量 VAR（Makefile 中的变量引用）
-    - ${VAR}：引用变量 VAR（Shell 中的变量引用）
-    - 会以“字符串”的形式展开（类似 C 中的宏展开）
-    - 可以通过 $(shell command) 来将 command 的输出结果作为替换的值
-    - 可以直接使用环境变量，如 $(PATH)
+  - $(VAR)：引用变量 VAR（Makefile 中的变量引用）
+  - ${VAR}：引用变量 VAR（Shell 中的变量引用）
+  - 会以“字符串”的形式展开（类似 C 中的宏展开）
+  - 可以通过 $(shell command) 来将 command 的输出结果作为替换的值
+  - 可以直接使用环境变量，如 $(PATH)
 
 <!--v-->
 
 ## 简介：make 命令
 
 - make 后面可以跟多个 target，指定执行的内容
-    - 如果不跟任何 target，则默认执行第一个 target
+  - 如果不跟任何 target，则默认执行第一个 target
 - 可以在 make 后面直接通过 `VAR=value` 的形式来定义变量
-    - 优先级：make 后 > Makefile 中定义 > 环境变量（make 前）
+  - 优先级：make 后 > Makefile 中定义 > 环境变量（make 前）
 - 一些常用的 make 命令 flag：
-    - make -f *FILE*：指定 Makefile 文件
-    - make -n：不执行命令，只显示命令
-    - make -s：不显示命令
-    - make -j N：并行执行 N 个任务
-    - make -k：忽略错误，继续执行
+  - make -f *FILE*：指定 Makefile 文件
+  - make -n：不执行命令，只显示命令
+  - make -s：不显示命令
+  - make -j N：并行执行 N 个任务
+  - make -k：忽略错误，继续执行
 
 <!--v-->
 
@@ -540,7 +543,6 @@ target ...: prerequisites ...
 
 - 🏆 和我一起写 Makefile：[seisman/how-to-write-makefile](https://seisman.github.io/how-to-write-makefile/)
 - GNU make 官方文档：[GNU make](https://www.gnu.org/software/make/manual/make.html)
-    
 
 <!--s-->
 
