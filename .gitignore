@@ -2,6 +2,6 @@
 
 *.sh
 
-groupmetting/slides/*
+gm/slides/*
 
 .vscode/*
