@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>组会汇报</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/simple.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/github.css" />
+
+    <link rel="stylesheet" href="./assets/light.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<div class="middle center">
+<div style="width: 100%">
+
+# Learning NeRF
+
+<hr/>
+
+2023.3.14 [Chenxu Zhou](https://github.com/Xuer04)
+
+</div>
+</div>
+
+</script></section><section  data-markdown><script type="text/template">
+
+## 本周进展
+
+- 学习整理 [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch) 的源码
+- 熟悉 [learning_nerf](https://github.com/pengsida/learning_nerf) 的框架
+  - 看懂 Image fitting demo 的整个流程
+  - 完成了 Dataset 和 Network 部分的代码(render 还没 work)
+
+```sh
+├── lib.datasets.nerf.synthetic.py
+│   ├── __init__
+│   ├── __getitem__
+│   └── __len__
+├── lib.networks.nerf.network.py
+│   ├── __init__
+│   ├── forward
+│   └── render
+├── lib.evaluators.nerf.py
+└── lib.train.losses.nerf.py
+```
+
+</script></section><section  data-markdown><script type="text/template">
+
+## 下周计划
+
+- 完成框架的代码
+- 用框架跑一下 Blender 合成的数据集
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"slide","transitionSpeed":"fast","center":false,"slideNumber":"c/t","width":1000}, queryOptions);
+    </script>
+
+    <script src="https://cdn.tonycrane.cc/heti/heti.js"></script>
+    <script src="./assets/heti_worker.js"></script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
