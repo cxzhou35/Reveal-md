@@ -10,6 +10,7 @@ build:
 	@echo "Building lec$(LECNO) slides..."
 	@reveal-md lec$(LECNO).md --scripts https://cdn.tonycrane.cc/heti/heti.js,heti_worker.js --static ../../site/lec$(LECNO) --assets-dir assets
 	@rm ../../site/lec$(LECNO)/lec$(LECNO).html
+	@cp ./favicon.ico ../../site/lec$(LECNO)/favicon.ico
 
 live-home:
 	@echo "Previewing home slides..."
