@@ -305,8 +305,9 @@ NeRF 的代码实现有很多方式，可以从中选取比较熟悉的实现方
 - [官方的 TensorFlow 实现](https://github.com/bmild/nerf)
 - [Pytorch 实现](https://github.com/yenchenlin/nerf-pytorch)
 - [Read NeRF Pytorch](https://github.com/xunull/read-nerf-pytorch): 带注释版本的 nerf-pytorch
+- [Taichi + PyTorch](https://github.com/taichi-dev/taichi-nerfs): Taichi + Pytorch 实现
 
-建议学习第二种实现方式，Pytorch 是现在更加主流的框架
+建议学习 Pytorch 相关的实现方式，Pytorch 是现在更加主流的框架
 
 <!--v-->
 
@@ -408,6 +409,24 @@ Metrics:
 | MSE | PSNR |
 |:--:|:--:|
 |0.00124|29.13|
+
+<!--v-->
+
+## 一些 Tips
+
+关于自己制作数据集，需要注意以下几点
+
+- 拍摄场景的光照条件尽可能保持一致
+- 尽量保持多视角物体在图像中的相对位置不变
+- 为了获得更精确的相机内参，可以在用 COLMAP 的时候选择**共享内参**
+- 多视角图像的数量保持在 50-100 张比较合适
+
+训练过程中模型调参
+
+- 先根据论文中的参数复现，遇到问题再检查各个模块
+- 由于拍摄场景的不同，需要调整 scene 的 near 和 far 参数(原先 NeRF 中使用的是 2.0 和 6.0 )
+- 关注训练过程中 loss 的变化，如果有问题的化可以考虑简化训练过程，只用 coarse model 进行训练，查看结果是否有问题，没问题再加上 fine model
+- ...
 
 <!--s-->
 
