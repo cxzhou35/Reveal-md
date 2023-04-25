@@ -171,18 +171,13 @@ NeRF 相较于这些方法的优势
 
 ## NeRF 的结果
 
-<div style="position: relative; text-align: center;">
-  <div style="float: left; width: 50%;">
-    <video width="100%" height="auto" controls>
-      <source src="./asserts/benchflower.mp4" type="video/mp4">
-    </video>
+<div style="display: flex; justify-content: center; align-items: center; position: relative;">
+  <div style="text-align: center;">
+    <img src="./asserts/benchflower.gif" style="width: 85%">
   </div>
-  <div style="float: right; width: 50%;">
-    <video width="100%" height="auto" controls>
-      <source src="./asserts/orchid.mp4" type="video/mp4">
-    </video>
+  <div style="text-align: center;">
+    <img src="./asserts/orchid.gif" style="width: 85%">
   </div>
-  <div style="clear: both;"></div>
 </div>
 
 <!--s-->
@@ -397,22 +392,15 @@ Pipeline
 
 ## Eval 结果
 
-模型训练完之后，可以保存模型做 evaluate，通过 novel view 和 metrics 来检验训练结果
+模型训练完之后，可以保存模型做 evaluate，通过 novel view 和 metrics 来检验训练结果(200k iterations)
 
-<div style="position: relative; text-align: center;">
-  <div style="float: left; width: 50%;">
-    <video width="320" height="240" controls>
-      <source src="./asserts/video_pred.mp4" type="video/mp4">
-    </video>
-    <figcaption style="font-size: 16px;">RGB pred</figcaption>
+<div style="display: flex; justify-content: center; align-items: center; position: relative;">
+  <div style="text-align: center;">
+    <img src="./asserts/video_gt.gif" style="width: 240px; height: 240px;">
   </div>
-  <div style="float: right; width: 50%;">
-    <video width="320" height="240" controls>
-      <source src="./asserts/video_gt.mp4" type="video/mp4">
-    </video>
-    <figcaption style="font-size: 16px;">RGB gt</figcaption>
+  <div style="text-align: center;">
+    <img src="./asserts/video_pred.gif" style="width: 240px; height: 240px;">
   </div>
-  <div style="clear: both;"></div>
 </div>
 
 Metrics:
