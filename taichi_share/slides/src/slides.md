@@ -51,7 +51,7 @@ Research interest
 Miscs
 
 - Github: <https://github.com/Xuer04>
-- Homepage: <https://zicx.top/>
+- Homepage: <https://zicx.top/home>
 - Twitter: <https://twitter.com/cxzhou35>
 
 <!--v-->
@@ -88,7 +88,7 @@ Miscs
 
 相关资料的链接 🔗
 
-- 论文阅读笔记: <http://zicx.top/notebook/paper/nerf/>
+- 论文阅读笔记: <http://zicx.top/notebook/paper/nerf>
 - 复现代码仓库: <https://github.com/Xuer04/learning_nerf>
 
 </div>
