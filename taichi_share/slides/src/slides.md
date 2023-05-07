@@ -22,7 +22,7 @@ revealOptions:
     <h1>Taichi 社区分享会</h1>
     <hr>
     <p>Exploring NeRF: My Journey Through Research and Code</p>
-    <p>By <a href="https://github.com/Xuer04">@Chenxu Zhou</a></p>
+    <p>By <a href="https://github.com/cxzhou35">@Chenxu Zhou</a></p>
     <div style="text-align: right; margin-top: 1em;">
       <p>2023.4.26</p>
       <p>Powered by <a href="https://github.com/webpro/reveal-md">@reveal-md</p>
@@ -40,7 +40,7 @@ Who am I?
 
 - 浙江大学光电科学与工程系大三在读
 - [ZJU 3DV Group](https://github.com/zju3dv) 实习生
-- Vim 爱好者/开发者 &hairsp; ➡️  [My neovim config](https://github.com/Xuer04/Awesome-neovim)
+- Vim 爱好者/开发者 &hairsp; ➡️  [My neovim config](https://github.com/cxzhou35/Awesome-neovim)
 
 Research interest
 
@@ -50,7 +50,7 @@ Research interest
 
 Miscs
 
-- Github: <https://github.com/Xuer04>
+- Github: <https://github.com/cxzhou35>
 - Homepage: <https://zicx.top/home>
 - Twitter: <https://twitter.com/cxzhou35>
 
@@ -89,7 +89,7 @@ Miscs
 相关资料的链接 🔗
 
 - 论文阅读笔记: <http://zicx.top/notebook/paper/nerf>
-- 复现代码仓库: <https://github.com/Xuer04/learning_nerf>
+- 复现代码仓库: <https://github.com/cxzhou35/learning_nerf>
 
 </div>
 

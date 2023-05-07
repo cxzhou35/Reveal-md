@@ -24,7 +24,7 @@ revealOptions:
 
 2023 年春夏学期计算机学院朋辈辅学「实用工具拾遗」课程
 
-By [@Zicx](https://github.com/Xuer04)
+By [@Zicx](https://github.com/cxzhou35)
 
 <div style="text-align: right; margin-top: 1em;">
 <p>2023.4.8&emsp;&emsp;&emsp;</p>
@@ -75,7 +75,7 @@ By [@Zicx](https://github.com/Xuer04)
 - Neovim
   - [neoim.org](https://neovim.io/)
   - [Neovim Github](https://github.com/neovim/neovim)
-  - [Zicx's neovim config repo](https://github.com/Xuer04/Awesome-neovim)<br>
+  - [Zicx's neovim config repo](https://github.com/cxzhou35/Awesome-neovim)<br>
   觉得有用的话可以给我点个star⭐️ :)
 
 <!--s-->

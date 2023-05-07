@@ -143,7 +143,7 @@ lazygit
 
 **Github - Internet hosting platform**
 
-Welcome to visit my github page [https://github.com/Xuer04](https://github.com/Xuer04) :)
+Welcome to visit my github page [https://github.com/cxzhou35](https://github.com/cxzhou35) :)
 <img src="./img/github_profile.png" align="center"/>
 
 <!--v-->
