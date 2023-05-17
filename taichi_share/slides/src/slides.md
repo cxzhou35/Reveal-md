@@ -88,7 +88,7 @@ Miscs
 
 相关资料的链接 🔗
 
-- 论文阅读笔记: <http://zicx.top/notebook/paper/nerf>
+- 论文阅读笔记: <http://zicx.top/notebook/research/nerf>
 - 复现代码仓库: <https://github.com/cxzhou35/learning_nerf>
 
 </div>
@@ -254,7 +254,7 @@ NeRF 相较于这些方法的优势
 - 分段体积渲染
 - NDC 坐标系转换
 
-公式推导可以参考我的笔记 ➡️  [NeRF 公式推导](http://zicx.top/notebook/paper/nerf/math/)
+公式推导可以参考我的笔记 ➡️  [NeRF 公式推导](https://zicx.top/notebook/research/nerf/math/)
 
 <!--v-->
 
