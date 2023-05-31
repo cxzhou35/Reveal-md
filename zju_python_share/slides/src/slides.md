@@ -72,6 +72,7 @@ Misc
 
 - 分享会课件: [Slides link 🔗](https://zicx.top/Reveal-md/zju_python_share/site/slides/#)
 - Zicx 的联系方式: [Email 📧](mailto:zjajzcx3566@gmail.com)
+- 上机测试题: [File link 🔗](https://zicx.top/Reveal-md/zju_python_share/site/slides/#)
 
 </div>
 
