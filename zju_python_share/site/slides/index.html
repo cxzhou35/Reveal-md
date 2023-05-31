@@ -77,6 +77,7 @@ Misc
 
 - 分享会课件: [Slides link 🔗](https://zicx.top/Reveal-md/zju_python_share/site/slides/#)
 - Zicx 的联系方式: [Email 📧](mailto:zjajzcx3566@gmail.com)
+- 上机测试题: [File link 🔗](https://github.com/cxzhou35/Reveal-md/blob/main/zju_python_share/slides/src/docs/python_test_exercises.pdf)
 
 </div>
 
@@ -358,6 +359,44 @@ Misc
 
 - 注意缩进
     - 缩进不一样代码结果完全不一样
+
+</script></section><section data-markdown><script type="text/template">
+
+## 一道不错的题目
+
+<div class="fragment">
+
+```python
+>>> t = 1
+>>> t, a = 2, t + 1
+>>> print(a)
+```
+
+</div>
+
+<div class="fragment">
+
+结果应该是什么呢❓ 答案是 3 吗❓
+
+</div>
+
+<div class="fragment">
+
+正确答案是 2❗ Why❓
+
+</div>
+
+<div class="fragment">
+
+这道题考察对于Python中的<u>赋值语句</u>的理解
+
+以下是赋值语句的执行过程
+
+1. 计算赋值号右边的表达式的值
+2. 在对应的作用域中找到赋值号左边对应的变量
+3. 将表达式的值分别绑定到变量上
+
+</div>
 
 </script></section><section data-markdown><script type="text/template">
 
