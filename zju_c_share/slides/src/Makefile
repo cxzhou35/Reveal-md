@@ -9,6 +9,7 @@ build:
 	@reveal-md slides.md --scripts https://cdn.tonycrane.cc/heti/heti.js,heti_worker.js --static ../../site/slides --assets-dir assets
 	@rm ../../site/slides/slides.html
 	@cp ./favicon.ico ../../site/slides/favicon.ico
+	@cp ./test.c ../../site/slides/test.c
 
 
 clean:
