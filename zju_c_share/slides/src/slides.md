@@ -26,6 +26,7 @@ revealOptions:
     <div style="text-align: right; margin-top: 1em;">
       <p>2024.12.13</p>
       <p>Powered by <a href="https://github.com/webpro/reveal-md">@reveal-md</p>
+      <p>Template credit <a href="https://github.com/TonyCrane/slide-template">@TonyCrane</p>
     </div>
   </div>
 </div>
