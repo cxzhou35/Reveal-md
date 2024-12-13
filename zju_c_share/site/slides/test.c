@@ -17,12 +17,13 @@ int main()
     for (i = 0; i < MAX - 1; i++) {
         for (j = 0; j < MAX - 1 - i; j++) {
             if (a[j] > a[j + 1]) {
-                // a[j]     = a[j + 1];
-                // temp     = a[j];
-                // a[j + 1] = temp;
+                // swap a[j] and a[j+1]
                 temp     = a[j];
                 a[j]     = a[j + 1];
                 a[j + 1] = temp;
+                // temp     = a[j];
+                // a[j]     = a[j + 1];
+                // a[j + 1] = temp;
             }
         }
     }
